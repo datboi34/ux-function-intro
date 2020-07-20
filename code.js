@@ -8,7 +8,7 @@
   Return the number 5 from this function.
 */
 function getNumberFive() {
-  // Your code here
+  return 5;
 }
 
 /* 
@@ -27,7 +27,7 @@ console.log(getNumberFive() === 5);
   Multiply these two numbers and return the result.
 */
 function multiply(a, b) {
-  // You code here
+  return a * b;
 }
 
 /* 
@@ -50,7 +50,7 @@ console.log(multiply(0, 0) === 0);
   Add the text to the end of the message, and then return the complete string.
 */
 function concatenate(message, text) {
-  // You code here
+  return message + text;
 }
 
 /* 
@@ -73,7 +73,9 @@ console.log(concatenate("", "New text!") === "New text!");
   Otherwise, multiply the number by -1 and return it. 
 */
 function absoluteValue(number) {
-  // You code here
+  if (number > 0) {
+    return number;
+  } else return number * -1;
 }
 
 /* 
@@ -102,9 +104,18 @@ console.log(absoluteValue(0) === 0);
   Hint: Remember the Modulo operator! % 
   How can you use it to determine if the number is odd or even? 
   (Look at the lesson on Operators)
+
+  In this using === 0 makes it so that there is no remainder
 */
 function evenOddOrZero(number) {
-  // You code here
+  let result;
+  if (number == 0) {
+    result = "zero";
+  } else if (number % 2 == 0) {
+    result = "even";
+  } else {
+    result = "odd";
+  }
 }
 
 /* 
